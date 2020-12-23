@@ -957,8 +957,12 @@
  * X and Y offset
  *   Use a caliper or ruler to measure the distance from the tip of
  *   the Nozzle to the center-point of the Probe in the X and Y axes.
+<<<<<<< HEAD
 <<<<<<< Updated upstream
  * 
+=======
+ *
+>>>>>>> 59de35e749ee6e36ca5fbf7eeae32f34d78f3cb0
  * Z offset
  * - For the Z offset use your best known value and adjust at runtime.
 =======
@@ -974,8 +978,12 @@
  * - Probes triggering above the nozzle height are uncommon but do exist. When using
  *   probes such as this, carefully set Z_CLEARANCE_DEPLOY_PROBE and Z_CLEARANCE_BETWEEN_PROBES
  *   to avoid collisions during probing.
+<<<<<<< HEAD
 <<<<<<< Updated upstream
  * 
+=======
+ *
+>>>>>>> 59de35e749ee6e36ca5fbf7eeae32f34d78f3cb0
  * Tune and Adjust
  * -  Probe Offsets can be tuned at runtime with 'M851', LCD menus, babystepping, etc.
  * -  PROBE_OFFSET_WIZARD (configuration_adv.h) can be used for setting the Z offset.
@@ -1510,6 +1518,7 @@
 #endif
 
 // Homing speeds (mm/min)
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 #define HOMING_FEEDRATE_XY (50*60)
 =======
@@ -1517,6 +1526,9 @@
 #define HOMING_FEEDRATE_XY (100*60)
 >>>>>>> Stashed changes
 #define HOMING_FEEDRATE_Z  (4*60)
+=======
+#define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (4*60) }
+>>>>>>> 59de35e749ee6e36ca5fbf7eeae32f34d78f3cb0
 =======
 #define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (4*60) }
 >>>>>>> 59de35e749ee6e36ca5fbf7eeae32f34d78f3cb0
