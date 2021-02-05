@@ -277,7 +277,7 @@ class StatusScreen : public BaseScreen, public CachedScreen<STATUS_SCREEN_CACHE,
     static void draw_progress(draw_mode_t);
     static void draw_interaction_buttons(draw_mode_t);
     static void draw_status_message(draw_mode_t, const char * const);
-
+    static void _format_time(char *outstr, uint32_t time);
   public:
     static void loadBitmaps();
     static void setStatusMessage(const char *);
@@ -539,7 +539,6 @@ class StepsScreen : public BaseNumericAdjustmentScreen, public CachedScreen<STEP
         static float getHightlightedValue();
         static void drawHighlightedPointValue();
         static void drawMesh(int16_t x, int16_t y, int16_t w, int16_t h, ExtUI::bed_mesh_t data, uint8_t opts, float autoscale_max = 0.1);
-        static bool isMeshComplete(ExtUI::bed_mesh_t data);
 
       public:
         static void onMeshUpdate(const int8_t x, const int8_t y, const float val);
