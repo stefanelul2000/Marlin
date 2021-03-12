@@ -1006,42 +1006,30 @@
  * X and Y offset
  *   Use a caliper or ruler to measure the distance from the tip of
  *   the Nozzle to the center-point of the Probe in the X and Y axes.
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< Updated upstream
  * 
 =======
  *
 >>>>>>> 59de35e749ee6e36ca5fbf7eeae32f34d78f3cb0
- * Z offset
- * - For the Z offset use your best known value and adjust at runtime.
 =======
-<<<<<<< HEAD
+>>>>>>> Stashed changes
+ * Z offset
  * - For the Z offset use your best known value and adjust at runtime.
  * - Probe Offsets can be tuned at runtime with 'M851', LCD menus, babystepping, etc.
-=======
- *
- * Z offset
- * - For the Z offset use your best known value and adjust at runtime.
->>>>>>> Stashed changes
  * - Common probes trigger below the nozzle and have negative values for Z offset.
  * - Probes triggering above the nozzle height are uncommon but do exist. When using
  *   probes such as this, carefully set Z_CLEARANCE_DEPLOY_PROBE and Z_CLEARANCE_BETWEEN_PROBES
  *   to avoid collisions during probing.
-<<<<<<< HEAD
+ * Tune and Adjust
+ * -  Probe Offsets can be tuned at runtime with 'M851', LCD menus, babystepping, etc.
 <<<<<<< Updated upstream
- * 
-=======
- *
->>>>>>> 59de35e749ee6e36ca5fbf7eeae32f34d78f3cb0
- * Tune and Adjust
- * -  Probe Offsets can be tuned at runtime with 'M851', LCD menus, babystepping, etc.
- * -  PROBE_OFFSET_WIZARD (configuration_adv.h) can be used for setting the Z offset.
-=======
- *
- * Tune and Adjust
- * -  Probe Offsets can be tuned at runtime with 'M851', LCD menus, babystepping, etc.
  * -  PROBE_OFFSET_WIZARD (configuration_adv.h) can be used for setting the Z offset.
 >>>>>>> 59de35e749ee6e36ca5fbf7eeae32f34d78f3cb0
+>>>>>>> Stashed changes
+=======
+ * - For the Z offset use your best known value and adjust at runtime.
 >>>>>>> Stashed changes
  *
  * Assuming the typical work area orientation:
@@ -1718,14 +1706,19 @@
 // Preheat Constants - Up to 5 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
+<<<<<<< Updated upstream
 #define PREHEAT_1_TEMP_HOTEND 180
 #define PREHEAT_1_TEMP_BED     70
+=======
+#define PREHEAT_1_TEMP_HOTEND 190
+#define PREHEAT_1_TEMP_BED     60
+>>>>>>> Stashed changes
 #define PREHEAT_1_TEMP_CHAMBER 35
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "ABS"
 #define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    110
+#define PREHEAT_2_TEMP_BED    100
 #define PREHEAT_2_TEMP_CHAMBER 35
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
