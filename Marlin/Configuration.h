@@ -1309,7 +1309,7 @@
  * RAMPS-based boards use SERVO3_PIN for the first runout sensor.
  * For other boards you may need to define FIL_RUNOUT_PIN, FIL_RUNOUT2_PIN, etc.
  */
-#define FILAMENT_RUNOUT_SENSOR
+//#define FILAMENT_RUNOUT_SENSOR
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
   #define FIL_RUNOUT_ENABLED_DEFAULT true // Enable the sensor on startup. Override with M412 followed by M500.
   #define NUM_RUNOUT_SENSORS   1          // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
@@ -1616,20 +1616,9 @@
 #endif
 
 // Homing speeds (mm/min)
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-#define HOMING_FEEDRATE_XY (50*60)
-=======
-<<<<<<< HEAD
 #define HOMING_FEEDRATE_XY (100*60)
->>>>>>> Stashed changes
 #define HOMING_FEEDRATE_Z  (4*60)
-=======
 #define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (4*60) }
->>>>>>> 59de35e749ee6e36ca5fbf7eeae32f34d78f3cb0
-=======
-#define HOMING_FEEDRATE_MM_M { (50*60), (50*60), (4*60) }
->>>>>>> 59de35e749ee6e36ca5fbf7eeae32f34d78f3cb0
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
