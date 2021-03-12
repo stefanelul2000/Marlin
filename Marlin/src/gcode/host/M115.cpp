@@ -34,8 +34,8 @@
 #if ENABLED(EXTENDED_CAPABILITIES_REPORT)
   static void cap_line(PGM_P const name, bool ena=false) {
     SERIAL_ECHOPGM("Cap:");
-    serialprintPGM(name);
-    SERIAL_CHAR(':', ena ? '1' : '0');
+    SERIAL_ECHOPGM_P(name);
+    SERIAL_CHAR(':', '0' + ena);
     SERIAL_EOL();
   }
 #endif
@@ -141,8 +141,11 @@ void GcodeSuite::M115() {
     // CHAMBER_TEMPERATURE (M141, M191)
     cap_line(PSTR("CHAMBER_TEMPERATURE"), ENABLED(HAS_HEATED_CHAMBER));
 
-    // MEATPACK Compresson
-    cap_line(PSTR("MEATPACK"), ENABLED(MEATPACK));
+    // COOLER_TEMPERATURE (M143, M193)
+    cap_line(PSTR("COOLER_TEMPERATURE"), ENABLED(HAS_COOLER));
+
+    // MEATPACK Compression
+    cap_line(PSTR("MEATPACK"), ENABLED(HAS_MEATPACK));
 
     // Machine Geometry
     #if ENABLED(M115_GEOMETRY_REPORT)
